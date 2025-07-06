@@ -1,4 +1,3 @@
-
 export const buienRadar = async (data) => {
   
   if (data.lat && data.lon) {
