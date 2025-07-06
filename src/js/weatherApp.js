@@ -3,6 +3,8 @@ import { startLoadingState, endLoadingState } from "./setLoadingState.js";
 import { handleError } from "./handleError.js";
 import { currentWeatherData } from "./currentWeatherData.js";
 import { weatherForecastData } from "./weatherForecastData.js";
+import { buienRadar } from "./buienradar.js";
+
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -19,6 +21,7 @@ const fetchWeatherData = async (data) => {
     await startLoadingState();
     await currentWeatherData(data, API_KEY);
     await weatherForecastData(data, API_KEY);
+    await buienRadar(data);
     await endLoadingState();
   } catch (error) {
     if (error.message === "Failed to fetch") {
