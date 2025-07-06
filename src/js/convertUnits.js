@@ -23,8 +23,8 @@ export const formatDate = async (unixTimestamp, type) => {
     "december",
   ];
 
-  const daysOfWeekShortened = ["zon", "ma", "di", "woe", "don", "vrij", "zat"];
-  const monthsOfYearShortened = ["jan", "feb", "maa", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
+  const daysOfWeekShortened = ["zon", "maan", "di", "woe", "don", "vrij", "zat"];
+  const monthsOfYearShortened = ["jan", "feb", "maar", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
 
   const date = new Date(unixTimestamp * 1000);
   const dayOfMonth = date.getDate();
