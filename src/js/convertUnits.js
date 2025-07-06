@@ -7,24 +7,24 @@ export const roundDegree = async (degree) => {
 };
 
 export const formatDate = async (unixTimestamp, type) => {
-  const daysOfWeek = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"];
+  const daysOfWeek = ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"];
   const monthsOfYear = [
-    "Januari",
-    "Februari",
-    "Maart",
-    "April",
-    "Mei",
-    "Juni",
-    "Juli",
-    "Augustus",
-    "September",
-    "Oktober",
-    "November",
-    "December",
+    "januari",
+    "februari",
+    "maart",
+    "april",
+    "mei",
+    "juni",
+    "juli",
+    "augustus",
+    "september",
+    "oktober",
+    "november",
+    "december",
   ];
 
-  const daysOfWeekShortened = ["Zon", "Ma", "Di", "Woe", "Don", "Vrij", "Zat"];
-  const monthsOfYearShortened = ["Jan", "Feb", "Maar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"];
+  const daysOfWeekShortened = ["zon", "ma", "di", "woe", "don", "vrij", "zat"];
+  const monthsOfYearShortened = ["jan", "feb", "maa", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"];
 
   const date = new Date(unixTimestamp * 1000);
   const dayOfMonth = date.getDate();
