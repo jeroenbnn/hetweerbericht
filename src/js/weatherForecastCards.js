@@ -20,17 +20,11 @@ export const createHourlyCards = () => {
     hourlyWeatherForecastTemperature.classList.add("hourly-weather-forecast-temperature", "loading", "dynamic-data");
     hourlyWeatherForecastTemperature.innerHTML = "&emsp;&emsp;";
 
-    /*
-    const hourlyWeatherForecastWindspeed = document.createElement("div");
-    hourlyWeatherForecastWindspeed.classList.add("daily-weather-forecast-windspeed", "loading", "dynamic-data");
-    hourlyWeatherForecastWindspeed.innerHTML = "&emsp;&emsp;";
-    */
     hourlyWeatherForecastDateTime.appendChild(hourlyWeatherForecastDate);
     hourlyWeatherForecastDateTime.appendChild(hourlyWeatherForecastTime);
 
     hourlyWeatherForecastCard.appendChild(hourlyWeatherForecastDateTime);
     hourlyWeatherForecastCard.appendChild(hourlyWeatherForecastTemperature);
-    hourlyWeatherForecastWindspeed.appendChild(hourlyWeatherForecastTime);
 
     hourlyWeatherForecastSection.appendChild(hourlyWeatherForecastCard);
   }
