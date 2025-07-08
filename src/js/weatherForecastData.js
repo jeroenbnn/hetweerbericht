@@ -5,6 +5,7 @@ export const weatherForecastData = async (data, key) => {
   const hourlyWeatherForecastDate = document.querySelectorAll(".hourly-weather-forecast-date");
   const hourlyWeatherForecastTime = document.querySelectorAll(".hourly-weather-forecast-time");
   const hourlyWeatherForecastTemperature = document.querySelectorAll(".hourly-weather-forecast-temperature");
+  const hourlyWeatherForecastWindspeed = document.querySelectorAll(".hourly-weather-forecast-windspeed");
 
   const dailyWeatherForecastDate = document.querySelectorAll(".daily-weather-forecast-date");
   const dailyWeatherForecastTime = document.querySelectorAll(".daily-weather-forecast-time");
@@ -40,6 +41,7 @@ export const weatherForecastData = async (data, key) => {
     hourlyWeatherForecastDate[index].innerHTML = await formatDate(weatherForecastData.list[index].dt, "day");
     hourlyWeatherForecastTime[index].innerHTML = await formatDate(weatherForecastData.list[index].dt, "hour");
     hourlyWeatherForecastTemperature[index].innerHTML = await roundDegree(weatherForecastData.list[index].main.temp);
+    hourlyWeatherForecastWindspeed[index].innerHTML = await roundDegree(hourlyWeatherForecastWindspeed.list[index].wind.speed);
   }
 
   for (let index = 0; index < 40; index++) {
