@@ -5,7 +5,7 @@ export const weatherForecastData = async (data, key) => {
   const hourlyWeatherForecastDate = document.querySelectorAll(".hourly-weather-forecast-date");
   const hourlyWeatherForecastTime = document.querySelectorAll(".hourly-weather-forecast-time");
   const hourlyWeatherForecastTemperature = document.querySelectorAll(".hourly-weather-forecast-temperature");
-  const hourlyWeatherForecastWindspeed = document.querySelectorAll(".hourly-weather-forecast-windspeed");
+  //const hourlyWeatherForecastWindspeed = document.querySelectorAll(".hourly-weather-forecast-windspeed");
 
   const dailyWeatherForecastDate = document.querySelectorAll(".daily-weather-forecast-date");
   const dailyWeatherForecastTime = document.querySelectorAll(".daily-weather-forecast-time");
